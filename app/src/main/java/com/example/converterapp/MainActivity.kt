@@ -8,7 +8,7 @@ import kotlinx.android.synthetic.main.activity_main.*
 import java.lang.NumberFormatException
 
 class MainActivity : AppCompatActivity() {
-
+    // testing on pixel2, pixel3a
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)

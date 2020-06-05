@@ -6,28 +6,26 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <LinearLayout
+    <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="1dp">
+        android:orientation="horizontal">
 
         <EditText
             android:id="@+id/et"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="350dp"
+            android:layout_gravity="center"
             android:inputType="numberDecimal"/>
 
         <Button
             android:id="@+id/btn"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="30dp"
-            android:text="@string/btns" />
+            android:layout_gravity="center"
+            android:layout_marginTop="70dp"
+            android:text="@string/btns"/>
 
-    </LinearLayout>
+    </FrameLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
