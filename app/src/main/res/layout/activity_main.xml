@@ -12,7 +12,7 @@
         android:orientation="horizontal">
 
         <Spinner
-            android:id="@+id/from_cur"
+            android:id="@+id/to_cur"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
             android:layout_gravity="center"
@@ -20,7 +20,7 @@
             android:entries="@array/currencies"/>
 
         <Spinner
-            android:id="@+id/to_cur"
+            android:id="@+id/from_cur"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
             android:layout_gravity="center"
