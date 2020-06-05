@@ -31,6 +31,8 @@ class MainActivity : AppCompatActivity() {
         val spinAdapt = ArrayAdapter(this, android.R.layout.simple_spinner_dropdown_item, cur)
         to_cur.adapter = spinAdapt
         from_cur.adapter = spinAdapt
+        to_cur.setSelection(13)
+        from_cur.setSelection(26)
 
         btn.setOnClickListener {
             loadServerData()
@@ -44,7 +46,7 @@ class MainActivity : AppCompatActivity() {
 
         client.newCall(request).enqueue(object: Callback{
             override fun onFailure(call: Call, e: IOException) {
-                Toast.makeText(applicationContext, "Server connection error, please reconnect to the Internet", Toast.LENGTH_SHORT).show()
+                runOnUiThread{Toast.makeText(applicationContext, "Server connection error, please reconnect to the Internet", Toast.LENGTH_SHORT).show()}
             }
 
             @SuppressLint("SetTextI18n")
