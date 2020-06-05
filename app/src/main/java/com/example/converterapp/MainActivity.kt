@@ -14,7 +14,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         btn.setOnClickListener {
             try {
-                et.setText((et.text.toString().toDouble()*74).toString())
+                et_to.text = (et_from.text.toString().toDouble()*74).toString()+"rub"
             } catch (e: NumberFormatException) {
                 Toast.makeText(applicationContext, "Number is wrong, please try again", Toast.LENGTH_SHORT).show()
             }
