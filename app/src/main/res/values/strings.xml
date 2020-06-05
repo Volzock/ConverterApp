@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">ConverterApp</string>
     <string name="btns">Convert</string>string>
+    <string-array name="currencies">
+        <item>RUB</item>
+        <item>USD</item>
+    </string-array>>
 </resources>
